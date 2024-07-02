@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axon Wireless Speedtest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Axon Wireless Speedtest</h1>
+        </header>
+        <main>
+            <div class="speedtest">
+                <div class="server-selection">
+                    <label for="server">Select Server:</label>
+                    <select id="server">
+                        <option value="auto">Auto</option>
+                        <option value="server1">Server 1</option>
+                        <option value="server2">Server 2</option>
+                    </select>
+                </div>
+                <button id="startButton">Start Test</button>
+                <div id="loading" class="loading">Testing...</div>
+                <div id="results" class="results">
+                    <div class="metric">
+                        <span class="label">Download Speed:</span>
+                        <span id="downloadSpeed" class="value">0 Mbps</span>
+                    </div>
+                    <div class="metric">
+                        <span class="label">Upload Speed:</span>
+                        <span id="uploadSpeed" class="value">0 Mbps</span>
+                    </div>
+                    <div class="metric">
+                        <span class="label">Latency (Ping):</span>
+                        <span id="ping" class="value">0 ms</span>
+                    </div>
+                    <div class="metric">
+                        <span class="label">Jitter:</span>
+                        <span id="jitter" class="value">0 ms</span>
+                    </div>
+                    <div class="metric">
+                        <span class="label">Packet Loss:</span>
+                        <span id="packetLoss" class="value">0%</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>© 2024 Axon Wireless Speedtest</p>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
